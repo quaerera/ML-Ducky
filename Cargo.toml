@@ -2,4 +2,5 @@
 name = "duck"
 version = "0.1.0"
 authors = ["mkubasz <mkubasz@gmail.com>"]
-edit
+edition = "2018"
+repository = "https://
