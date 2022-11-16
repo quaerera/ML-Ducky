@@ -3,4 +3,5 @@ name = "duck"
 version = "0.1.0"
 authors = ["mkubasz <mkubasz@gmail.com>"]
 edition = "2018"
-repository = "https://
+repository = "https://github.com/mkubasz/duck_rs"
+homepage = "https
