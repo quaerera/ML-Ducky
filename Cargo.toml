@@ -6,4 +6,4 @@ edition = "2018"
 repository = "https://github.com/mkubasz/duck_rs"
 homepage = "https://github.com/mkubasz/duck_rs"
 license = "MIT"
-description = "Duck is implementa
+description = "Duck is implementation in Rust Machine Learning Library a
