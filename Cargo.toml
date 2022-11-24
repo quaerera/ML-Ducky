@@ -7,4 +7,5 @@ repository = "https://github.com/mkubasz/duck_rs"
 homepage = "https://github.com/mkubasz/duck_rs"
 license = "MIT"
 description = "Duck is implementation in Rust Machine Learning Library and Pandas port."
-keywords = ["machine learning", "data science", "dataframe", "pand
+keywords = ["machine learning", "data science", "dataframe", "pandas", "neural network"]
+categories = ["data scie
