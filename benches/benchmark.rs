@@ -7,4 +7,5 @@ use criterion::black_box;
 fn criterion_benchmark(c: &mut Criterion) {
 }
 
-criterion_group!(benches, criterion_benchma
+criterion_group!(benches, criterion_benchmark);
+criterion_main!(benches);
