@@ -1,1 +1,1 @@
-pub type Matrix = Vec<Vec
+pub type Matrix = Vec<Vec<f64>>;
