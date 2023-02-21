@@ -33,3 +33,39 @@ impl Into<String> for Cell {
        }
     }
 }
+
+impl Into<u32> for Cell {
+    fn into(self) -> u32 {
+        match self {
+            Cell::Integer(v) => v as u32,
+            _ => {panic!("Error")}
+        }
+    }
+}
+
+impl Into<f32> for Cell {
+    fn into(self) -> f32 {
+        match self {
+            Cell::Float(v) => v,
+            _ => {panic!("Error")}
+        }
+    }
+}
+
+impl Into<f64> for Cell {
+    fn into(self) -> f64 {
+        match self {
+            Cell::Float64(v) => v,
+            _ => {panic!("Error")}
+        }
+    }
+}
+
+impl Into<bool> for Cell {
+    fn into(self) -> bool {
+        match self {
+            Cell::Bool(v) => v,
+            _ => {panic!("Error")}
+        }
+    }
+}
