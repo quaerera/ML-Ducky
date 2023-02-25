@@ -69,3 +69,38 @@ impl Into<bool> for Cell {
         }
     }
 }
+
+impl From<String> for Cell {
+    fn from(v: String) -> Self {
+        Cell::Text(v)
+    }
+}
+
+impl From<DInteger> for Cell {
+    fn from(v: DInteger) -> Self {
+        Cell::Integer(v)
+    }
+}
+
+impl From<DFloat> for Cell {
+    fn from(v: DFloat) -> Self {
+        Cell::Float(v)
+    }
+}
+impl From<DFloat64> for Cell {
+    fn from(v: DFloat64) -> Self {
+        Cell::Float64(v)
+    }
+}
+
+impl From<bool> for Cell {
+    fn from(v: bool) -> Self {
+        Cell::Bool(v)
+    }
+}
+
+impl From<&str> for Cell {
+    fn from(v: &str) -> Self {
+        Cell::Text(v.to_owned())
+    }
+}
