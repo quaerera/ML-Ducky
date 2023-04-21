@@ -6,4 +6,5 @@ use std::f64;
 use num::NumCast;
 
 use crate::cell::Cell;
-use crate::dataframe
+use crate::dataframe::operations::Operations;
+use crat
