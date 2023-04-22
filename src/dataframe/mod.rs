@@ -8,4 +8,5 @@ use num::NumCast;
 use crate::cell::Cell;
 use crate::dataframe::operations::Operations;
 use crate::dataframe::science::Science;
+use crate::series::{Series, SeriesImpl};
 use cra
