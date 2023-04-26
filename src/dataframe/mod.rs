@@ -12,3 +12,4 @@ use crate::series::{Series, SeriesImpl};
 use crate::types::DataTypes;
 use std::borrow::Borrow;
 use std::cmp::Ordering;
+use crate::algebraic::matrix::Mat
