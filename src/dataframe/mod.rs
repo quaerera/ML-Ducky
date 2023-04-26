@@ -10,4 +10,5 @@ use crate::dataframe::operations::Operations;
 use crate::dataframe::science::Science;
 use crate::series::{Series, SeriesImpl};
 use crate::types::DataTypes;
-use std::borrow::Bor
+use std::borrow::Borrow;
+use std::cmp::Ordering;
