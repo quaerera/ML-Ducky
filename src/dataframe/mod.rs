@@ -15,4 +15,6 @@ use std::cmp::Ordering;
 use crate::algebraic::matrix::Matrix;
 
 pub mod science;
-pub mod oper
+pub mod operations;
+pub mod tests_dataframe;
+
