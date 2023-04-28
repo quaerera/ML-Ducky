@@ -19,4 +19,6 @@ pub mod operations;
 pub mod tests_dataframe;
 
 #[derive(Debug, Clone)]
-pub struct Data
+pub struct DataFrame {
+    pub size: usize,
+    pu
