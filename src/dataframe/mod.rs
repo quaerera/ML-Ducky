@@ -18,3 +18,5 @@ pub mod science;
 pub mod operations;
 pub mod tests_dataframe;
 
+#[derive(Debug, Clone)]
+pub struct Data
