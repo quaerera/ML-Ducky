@@ -22,4 +22,7 @@ pub mod tests_dataframe;
 pub struct DataFrame {
     pub size: usize,
     pub labels: Vec<String>,
-    pub data: Vec
+    pub data: Vec<Series<Cell>>,
+}
+
+type DataFrameGroup
