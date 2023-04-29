@@ -21,4 +21,5 @@ pub mod tests_dataframe;
 #[derive(Debug, Clone)]
 pub struct DataFrame {
     pub size: usize,
-    pu
+    pub labels: Vec<String>,
+    pub data: Vec
