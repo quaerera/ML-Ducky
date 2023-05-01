@@ -28,3 +28,4 @@ pub struct DataFrame {
 type DataFrameGroupBy = HashMap<String, Vec<Vec<Cell>>>;
 
 impl Operations for DataFrame {
+    fn new(vec: Vec<Vec<Cell>>, labels: Vec<&s
