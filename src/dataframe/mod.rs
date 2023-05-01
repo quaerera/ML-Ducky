@@ -25,4 +25,6 @@ pub struct DataFrame {
     pub data: Vec<Series<Cell>>,
 }
 
-type DataFrameGroupBy = HashMap<String, Vec<Vec
+type DataFrameGroupBy = HashMap<String, Vec<Vec<Cell>>>;
+
+impl Operations for DataFrame {
