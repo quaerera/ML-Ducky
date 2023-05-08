@@ -30,4 +30,5 @@ type DataFrameGroupBy = HashMap<String, Vec<Vec<Cell>>>;
 impl Operations for DataFrame {
     fn new(vec: Vec<Vec<Cell>>, labels: Vec<&str>) -> DataFrame {
         let mut column_types = vec![];
-        // Figure out the column ty
+        // Figure out the column types from the data
+        for i in 0..vec
