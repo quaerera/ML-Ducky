@@ -32,4 +32,7 @@ impl Operations for DataFrame {
         let mut column_types = vec![];
         // Figure out the column types from the data
         for i in 0..vec[0].len() {
-            column_types.push(ve
+            column_types.push(vec[0][i].data_type());
+        }
+
+        // 
