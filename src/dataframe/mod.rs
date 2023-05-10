@@ -35,4 +35,5 @@ impl Operations for DataFrame {
             column_types.push(vec[0][i].data_type());
         }
 
-        // 
+        // create columns based on column types
+        
