@@ -37,4 +37,4 @@ impl Operations for DataFrame {
 
         // create columns based on column types
         let mut cols = Vec::<Series<Cell>>::new();
-    
+        for (i, t) in column_types.iter()
