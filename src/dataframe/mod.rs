@@ -40,4 +40,4 @@ impl Operations for DataFrame {
         for (i, t) in column_types.iter().enumerate() {
             match t {
                 DataTypes::Text => cols.push(Series {
-   
+                    label: labels[i]
