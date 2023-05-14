@@ -39,4 +39,5 @@ impl Operations for DataFrame {
         let mut cols = Vec::<Series<Cell>>::new();
         for (i, t) in column_types.iter().enumerate() {
             match t {
-         
+                DataTypes::Text => cols.push(Series {
+   
