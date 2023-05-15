@@ -41,4 +41,6 @@ impl Operations for DataFrame {
             match t {
                 DataTypes::Text => cols.push(Series {
                     label: labels[i].to_string(),
-                    dat
+                    data: Vec::new(),
+                }),
+                Dat
