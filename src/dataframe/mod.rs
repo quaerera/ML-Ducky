@@ -44,4 +44,5 @@ impl Operations for DataFrame {
                     data: Vec::new(),
                 }),
                 DataTypes::Float => cols.push(Series {
-                    label: labels[i].to_string
+                    label: labels[i].to_string(),
+                    data: Vec::new
