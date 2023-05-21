@@ -48,4 +48,5 @@ impl Operations for DataFrame {
                     data: Vec::new(),
                 }),
                 _ => cols.push(Series {
-                    label: labels[
+                    label: labels[i].to_string(),
+         
