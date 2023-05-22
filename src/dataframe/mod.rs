@@ -50,4 +50,8 @@ impl Operations for DataFrame {
                 _ => cols.push(Series {
                     label: labels[i].to_string(),
                     data: Vec::new(),
-         
+                }),
+            }
+        }
+
+        let mut siz
