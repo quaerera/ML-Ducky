@@ -54,4 +54,6 @@ impl Operations for DataFrame {
             }
         }
 
-        let mut siz
+        let mut size = 0;
+        for row in vec.iter() {
+            for 
