@@ -58,4 +58,5 @@ impl Operations for DataFrame {
         for row in vec.iter() {
             for (col_index, cell) in row.iter().enumerate() {
                 match cell {
-     
+                    Cell::Float(c) => {
+        
