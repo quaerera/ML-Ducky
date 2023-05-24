@@ -57,4 +57,5 @@ impl Operations for DataFrame {
         let mut size = 0;
         for row in vec.iter() {
             for (col_index, cell) in row.iter().enumerate() {
- 
+                match cell {
+     
