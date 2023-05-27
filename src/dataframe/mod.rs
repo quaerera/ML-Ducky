@@ -61,4 +61,5 @@ impl Operations for DataFrame {
                     Cell::Float(c) => {
                         cols[col_index].data.push(cell.clone());
                     }
-      
+                    _ => {
+                        c
