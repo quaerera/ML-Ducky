@@ -59,4 +59,6 @@ impl Operations for DataFrame {
             for (col_index, cell) in row.iter().enumerate() {
                 match cell {
                     Cell::Float(c) => {
-                        cols[col_index].data.push
+                        cols[col_index].data.push(cell.clone());
+                    }
+      
