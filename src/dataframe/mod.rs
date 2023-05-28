@@ -63,3 +63,6 @@ impl Operations for DataFrame {
                     }
                     _ => {
                         cols[col_index].data.push(cell.clone());
+                    }
+                }
+    
