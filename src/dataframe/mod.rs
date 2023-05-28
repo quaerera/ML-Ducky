@@ -65,4 +65,5 @@ impl Operations for DataFrame {
                         cols[col_index].data.push(cell.clone());
                     }
                 }
-    
+            }
+            size += 1
