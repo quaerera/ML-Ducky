@@ -66,4 +66,6 @@ impl Operations for DataFrame {
                     }
                 }
             }
-            size += 1
+            size += 1;
+        }
+        let mut tmp: Vec<String> =
