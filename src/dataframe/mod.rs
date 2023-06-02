@@ -68,4 +68,5 @@ impl Operations for DataFrame {
             }
             size += 1;
         }
-        let mut tmp: Vec<String> =
+        let mut tmp: Vec<String> = Vec::new();
+        for label in labels {
