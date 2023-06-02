@@ -70,3 +70,4 @@ impl Operations for DataFrame {
         }
         let mut tmp: Vec<String> = Vec::new();
         for label in labels {
+            tmp.push(label.to_string
