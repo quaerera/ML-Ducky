@@ -73,4 +73,6 @@ impl Operations for DataFrame {
             tmp.push(label.to_string())
         }
         DataFrame {
-            
+            size,
+            labels: tmp,
+          
