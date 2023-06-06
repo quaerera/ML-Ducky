@@ -80,4 +80,5 @@ impl Operations for DataFrame {
     }
 
     fn push(&mut self, vec: Vec<Cell>) {
-        for (i, el) in
+        for (i, el) in vec.iter().enumerate() {
+            self
