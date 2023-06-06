@@ -75,4 +75,8 @@ impl Operations for DataFrame {
         DataFrame {
             size,
             labels: tmp,
-          
+            data: cols,
+        }
+    }
+
+    fn push
