@@ -79,4 +79,5 @@ impl Operations for DataFrame {
         }
     }
 
-    fn push
+    fn push(&mut self, vec: Vec<Cell>) {
+        for (i, el) in
