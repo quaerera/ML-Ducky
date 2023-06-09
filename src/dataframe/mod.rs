@@ -86,4 +86,4 @@ impl Operations for DataFrame {
         self.size += 1;
     }
 
-    fn seri
+    fn series(&mut self, index: usize) -> &mut
