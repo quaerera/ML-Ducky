@@ -83,3 +83,7 @@ impl Operations for DataFrame {
         for (i, el) in vec.iter().enumerate() {
             self.data[i].data.push(el.clone());
         }
+        self.size += 1;
+    }
+
+    fn seri
