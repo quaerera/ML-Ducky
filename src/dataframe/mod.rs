@@ -90,4 +90,4 @@ impl Operations for DataFrame {
         &mut self.data[index]
     }
 
-    fn by(&mut self, lab
+    fn by(&mut self, label: &str) -> Option<&mut Series<Cell>>
