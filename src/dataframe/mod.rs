@@ -86,4 +86,5 @@ impl Operations for DataFrame {
         self.size += 1;
     }
 
-    fn series(&mut self, index: usize) -> &mut
+    fn series(&mut self, index: usize) -> &mut Series<Cell> {
+        &mut self.data[ind
