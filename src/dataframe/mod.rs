@@ -87,4 +87,7 @@ impl Operations for DataFrame {
     }
 
     fn series(&mut self, index: usize) -> &mut Series<Cell> {
-        &mut self.data[ind
+        &mut self.data[index]
+    }
+
+    fn by(&mut self, lab
