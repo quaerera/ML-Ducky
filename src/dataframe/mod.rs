@@ -92,4 +92,6 @@ impl Operations for DataFrame {
 
     fn by(&mut self, label: &str) -> Option<&mut Series<Cell>> {
         let index = self.labels
-            .
+            .clone()
+            .iter()
+          
