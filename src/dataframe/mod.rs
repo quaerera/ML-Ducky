@@ -94,4 +94,5 @@ impl Operations for DataFrame {
         let index = self.labels
             .clone()
             .iter()
-          
+            .position(
+                |el| 
