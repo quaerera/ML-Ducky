@@ -95,4 +95,6 @@ impl Operations for DataFrame {
             .clone()
             .iter()
             .position(
-                |el| 
+                |el| el == label
+            )
+            .unwr
