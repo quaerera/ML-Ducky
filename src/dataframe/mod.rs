@@ -90,4 +90,6 @@ impl Operations for DataFrame {
         &mut self.data[index]
     }
 
-    fn by(&mut self, label: &str) -> Option<&mut Series<Cell>>
+    fn by(&mut self, label: &str) -> Option<&mut Series<Cell>> {
+        let index = self.labels
+            .
