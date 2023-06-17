@@ -97,4 +97,5 @@ impl Operations for DataFrame {
             .position(
                 |el| el == label
             )
-            .unwr
+            .unwrap();
+        Some(self.series((index).to_
