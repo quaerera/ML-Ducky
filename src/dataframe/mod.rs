@@ -101,4 +101,4 @@ impl Operations for DataFrame {
         Some(self.series((index).to_owned()))
     }
 
-    fn many(&mut self,
+    fn many(&mut self, labels: Vec<&str>) -> Vec<Series<Cell>> 
