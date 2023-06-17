@@ -98,4 +98,7 @@ impl Operations for DataFrame {
                 |el| el == label
             )
             .unwrap();
-        Some(self.series((index).to_
+        Some(self.series((index).to_owned()))
+    }
+
+    fn many(&mut self,
