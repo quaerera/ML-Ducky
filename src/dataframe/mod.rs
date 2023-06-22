@@ -104,3 +104,4 @@ impl Operations for DataFrame {
     fn many(&mut self, labels: Vec<&str>) -> Vec<Series<Cell>> {
         let mut vec: Vec<Series<Cell>> = Vec::new();
         for index in 0..self.data.len() {
+            let series = self.seri
