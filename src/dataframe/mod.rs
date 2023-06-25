@@ -105,4 +105,5 @@ impl Operations for DataFrame {
         let mut vec: Vec<Series<Cell>> = Vec::new();
         for index in 0..self.data.len() {
             let series = self.series(index).clone();
-            if labels.co
+            if labels.contains(&series.label.as_str()) {
+      
