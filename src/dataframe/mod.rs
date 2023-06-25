@@ -106,4 +106,4 @@ impl Operations for DataFrame {
         for index in 0..self.data.len() {
             let series = self.series(index).clone();
             if labels.contains(&series.label.as_str()) {
-      
+                vec.push(series.to_owned());
