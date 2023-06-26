@@ -112,4 +112,4 @@ impl Operations for DataFrame {
         vec
     }
 
-  
+    fn map(&mut self, col: &str, obj: Has
