@@ -112,4 +112,5 @@ impl Operations for DataFrame {
         vec
     }
 
-    fn map(&mut self, col: &str, obj: Has
+    fn map(&mut self, col: &str, obj: HashMap<&str, u32>) -> DataFrame {
+        for e
