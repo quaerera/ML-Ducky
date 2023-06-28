@@ -114,4 +114,5 @@ impl Operations for DataFrame {
 
     fn map(&mut self, col: &str, obj: HashMap<&str, u32>) -> DataFrame {
         for el in &mut self.by(col).unwrap().data {
-   
+            for (key, v) in obj.iter() {
+       
