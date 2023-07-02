@@ -117,4 +117,5 @@ impl Operations for DataFrame {
             for (key, v) in obj.iter() {
                 match el {
                     Cell::Text(cell) => {
-                        
+                        if *key == cell {
+                 
