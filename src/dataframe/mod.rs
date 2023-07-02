@@ -118,4 +118,4 @@ impl Operations for DataFrame {
                 match el {
                     Cell::Text(cell) => {
                         if *key == cell {
-                 
+                            *el = Cell::from(format!("{}", v)
