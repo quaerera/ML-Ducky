@@ -116,4 +116,5 @@ impl Operations for DataFrame {
         for el in &mut self.by(col).unwrap().data {
             for (key, v) in obj.iter() {
                 match el {
-                    Cell::Text(cell
+                    Cell::Text(cell) => {
+                        
