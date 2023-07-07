@@ -121,4 +121,7 @@ impl Operations for DataFrame {
                             *el = Cell::from(format!("{}", v));
                             break;
                         }
-                 
+                    }
+                    _ => {}
+                }
+     
