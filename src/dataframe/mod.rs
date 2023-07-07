@@ -124,4 +124,6 @@ impl Operations for DataFrame {
                     }
                     _ => {}
                 }
-     
+            }
+        }
+        self.to_owne
