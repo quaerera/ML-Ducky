@@ -126,4 +126,7 @@ impl Operations for DataFrame {
                 }
             }
         }
-        self.to_owne
+        self.to_owned()
+    }
+
+    fn concat(&mut self, df: Dat
