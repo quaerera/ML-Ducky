@@ -120,3 +120,5 @@ impl Operations for DataFrame {
                         if *key == cell {
                             *el = Cell::from(format!("{}", v));
                             break;
+                        }
+                 
