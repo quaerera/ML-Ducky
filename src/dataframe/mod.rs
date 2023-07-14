@@ -129,4 +129,6 @@ impl Operations for DataFrame {
         self.to_owned()
     }
 
-    fn concat(&mut self, df: Dat
+    fn concat(&mut self, df: DataFrame) -> DataFrame {
+        DataFrame {
+         
