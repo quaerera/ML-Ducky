@@ -131,4 +131,4 @@ impl Operations for DataFrame {
 
     fn concat(&mut self, df: DataFrame) -> DataFrame {
         DataFrame {
-         
+            size: self.labels.len() + df.la
