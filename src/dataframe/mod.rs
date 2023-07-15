@@ -138,4 +138,4 @@ impl Operations for DataFrame {
     }
 
 
-    fn drop
+    fn drop(&mut self, labels: Vec<&str>) -> Opt
