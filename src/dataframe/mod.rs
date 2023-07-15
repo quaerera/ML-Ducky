@@ -133,4 +133,9 @@ impl Operations for DataFrame {
         DataFrame {
             size: self.labels.len() + df.labels.len(),
             labels: [&self.labels[..], &df.labels[..]].concat(),
-            data: [&self.data[..], &df.data[..
+            data: [&self.data[..], &df.data[..]].concat(),
+        }
+    }
+
+
+    fn drop
