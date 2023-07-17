@@ -139,4 +139,5 @@ impl Operations for DataFrame {
 
 
     fn drop(&mut self, labels: Vec<&str>) -> Option<DataFrame> {
-        for label in labels
+        for label in labels {
+            let position = self.label
