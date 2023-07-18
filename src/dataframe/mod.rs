@@ -142,4 +142,6 @@ impl Operations for DataFrame {
         for label in labels {
             let position = self.labels
                 .clone()
-               
+                .iter()
+                .position(
+            
