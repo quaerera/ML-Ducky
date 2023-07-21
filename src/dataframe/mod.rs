@@ -144,4 +144,5 @@ impl Operations for DataFrame {
                 .clone()
                 .iter()
                 .position(
-            
+                |el| el == label
+                ).unw
