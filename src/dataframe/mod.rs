@@ -147,3 +147,5 @@ impl Operations for DataFrame {
                 |el| el == label
                 ).unwrap();
             self.labels.remove(position);
+            self.data.remove(position);
+      
