@@ -150,4 +150,7 @@ impl Operations for DataFrame {
             self.data.remove(position);
         }
         let a = self.to_owned();
-        Some(
+        Some(a)
+    }
+
+    fn drop_idx(&mut self, position
