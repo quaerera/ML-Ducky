@@ -154,4 +154,5 @@ impl Operations for DataFrame {
     }
 
     fn drop_idx(&mut self, position: usize) -> Option<DataFrame> {
-        if s
+        if self.labels.len() < position {
+            re
