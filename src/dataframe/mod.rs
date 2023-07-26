@@ -148,4 +148,6 @@ impl Operations for DataFrame {
                 ).unwrap();
             self.labels.remove(position);
             self.data.remove(position);
-      
+        }
+        let a = self.to_owned();
+        Some(
