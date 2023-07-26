@@ -153,4 +153,5 @@ impl Operations for DataFrame {
         Some(a)
     }
 
-    fn drop_idx(&mut self, position
+    fn drop_idx(&mut self, position: usize) -> Option<DataFrame> {
+        if s
