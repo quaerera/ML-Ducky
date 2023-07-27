@@ -157,4 +157,5 @@ impl Operations for DataFrame {
         if self.labels.len() < position {
             return None;
         }
-        sel
+        self.labels.remove(position);
+        self.data.re
