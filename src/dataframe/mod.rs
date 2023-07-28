@@ -158,4 +158,6 @@ impl Operations for DataFrame {
             return None;
         }
         self.labels.remove(position);
-        self.data.re
+        self.data.remove(position);
+        Some(self.to_owned())
+    }
