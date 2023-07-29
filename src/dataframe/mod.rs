@@ -162,4 +162,5 @@ impl Operations for DataFrame {
         Some(self.to_owned())
     }
 
-    fn contains(self, label: &str) ->
+    fn contains(self, label: &str) -> bool {
+        self.labels.contains(&label.to_s
