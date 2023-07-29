@@ -161,3 +161,5 @@ impl Operations for DataFrame {
         self.data.remove(position);
         Some(self.to_owned())
     }
+
+    fn contains(self, label: &str) ->
