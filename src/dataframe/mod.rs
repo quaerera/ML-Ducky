@@ -163,4 +163,7 @@ impl Operations for DataFrame {
     }
 
     fn contains(self, label: &str) -> bool {
-        self.labels.contains(&label.to_s
+        self.labels.contains(&label.to_string())
+    }
+
+    fn join(&mut self, df: DataFra
