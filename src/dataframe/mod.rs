@@ -166,4 +166,5 @@ impl Operations for DataFrame {
         self.labels.contains(&label.to_string())
     }
 
-    fn join(&mut self, df: DataFra
+    fn join(&mut self, df: DataFrame) {
+        let mut clone_df 
