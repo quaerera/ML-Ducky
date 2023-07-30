@@ -168,4 +168,5 @@ impl Operations for DataFrame {
 
     fn join(&mut self, df: DataFrame) {
         let mut clone_df = df.labels.clone();
-        let mut clone_data
+        let mut clone_data = df.data.clone();
+        self.label
