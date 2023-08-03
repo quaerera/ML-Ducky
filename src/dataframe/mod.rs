@@ -170,4 +170,5 @@ impl Operations for DataFrame {
         let mut clone_df = df.labels.clone();
         let mut clone_data = df.data.clone();
         self.labels.append(&mut clone_df);
-      
+        self.size += df.size;
+        self.data.ap
