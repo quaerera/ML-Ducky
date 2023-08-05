@@ -174,4 +174,5 @@ impl Operations for DataFrame {
         self.data.append(&mut clone_data);
     }
 
-    fn to_rows(&se
+    fn to_rows(&self) -> Option<Vec<Vec<Cell>>> {
+        le
