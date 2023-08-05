@@ -171,4 +171,7 @@ impl Operations for DataFrame {
         let mut clone_data = df.data.clone();
         self.labels.append(&mut clone_df);
         self.size += df.size;
-        self.data.ap
+        self.data.append(&mut clone_data);
+    }
+
+    fn to_rows(&se
