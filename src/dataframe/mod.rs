@@ -175,4 +175,5 @@ impl Operations for DataFrame {
     }
 
     fn to_rows(&self) -> Option<Vec<Vec<Cell>>> {
-        le
+        let mut el = vec![];
+        for i in 0..self.si
