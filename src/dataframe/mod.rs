@@ -178,4 +178,5 @@ impl Operations for DataFrame {
         let mut el = vec![];
         for i in 0..self.size {
             let mut row = row![];
+            for j in 0..self.data.len() {
             
