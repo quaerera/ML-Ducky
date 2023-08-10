@@ -179,4 +179,5 @@ impl Operations for DataFrame {
         for i in 0..self.size {
             let mut row = row![];
             for j in 0..self.data.len() {
-            
+                row.push(self.data[j].data[i].clone());
+           
