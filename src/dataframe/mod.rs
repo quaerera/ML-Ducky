@@ -186,4 +186,4 @@ impl Operations for DataFrame {
         Some(el.clone())
     }
 
-    fn g
+    fn group_by(&mut self, label: &str
