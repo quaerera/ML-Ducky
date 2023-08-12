@@ -182,4 +182,8 @@ impl Operations for DataFrame {
                 row.push(self.data[j].data[i].clone());
             }
             el.push(row);
-        
+        }
+        Some(el.clone())
+    }
+
+    fn g
