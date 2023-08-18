@@ -188,4 +188,6 @@ impl Operations for DataFrame {
 
     fn group_by(&mut self, label: &str) -> Option<DataFrameGroupBy> {
         let mut map: DataFrameGroupBy = HashMap::new();
-        let rows = match self.to_rows() 
+        let rows = match self.to_rows() {
+            Some(t) => t,
+            None =>
