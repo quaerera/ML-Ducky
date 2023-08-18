@@ -187,3 +187,4 @@ impl Operations for DataFrame {
     }
 
     fn group_by(&mut self, label: &str) -> Option<DataFrameGroupBy> {
+        let mut map: DataFrameGroupBy = HashMap::new
