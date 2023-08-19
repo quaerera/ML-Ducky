@@ -192,4 +192,5 @@ impl Operations for DataFrame {
             Some(t) => t,
             None => return None,
         };
-        let index = self.labels.clone().into_iter().positio
+        let index = self.labels.clone().into_iter().position(|x| &x == label).unwrap();
+        rows.clone
