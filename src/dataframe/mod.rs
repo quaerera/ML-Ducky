@@ -192,4 +192,4 @@ impl Operations for DataFrame {
             Some(t) => t,
             None => return None,
         };
-        let ind
+        let index = self.labels.clone().into_iter().positio
