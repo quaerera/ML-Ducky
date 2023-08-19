@@ -190,4 +190,6 @@ impl Operations for DataFrame {
         let mut map: DataFrameGroupBy = HashMap::new();
         let rows = match self.to_rows() {
             Some(t) => t,
-            None =>
+            None => return None,
+        };
+        let ind
