@@ -193,4 +193,5 @@ impl Operations for DataFrame {
             None => return None,
         };
         let index = self.labels.clone().into_iter().position(|x| &x == label).unwrap();
-        rows.clone
+        rows.clone().into_iter().for_each(|row| {
+     
