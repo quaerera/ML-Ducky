@@ -195,4 +195,5 @@ impl Operations for DataFrame {
         let index = self.labels.clone().into_iter().position(|x| &x == label).unwrap();
         rows.clone().into_iter().for_each(|row| {
             let a = match row[index].clone() {
-      
+                Cell::Text(x) => x,
+               
