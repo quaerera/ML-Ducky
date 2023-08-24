@@ -196,4 +196,6 @@ impl Operations for DataFrame {
         rows.clone().into_iter().for_each(|row| {
             let a = match row[index].clone() {
                 Cell::Text(x) => x,
-               
+                _ => String::from(""),
+            };
+           
