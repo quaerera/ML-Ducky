@@ -199,4 +199,4 @@ impl Operations for DataFrame {
                 _ => String::from(""),
             };
             if !map.contains_key(&a.clone()) { map.insert( a.clone(), vec![]); }
-            let mut
+            let mut v = map.get(&a.clone()).unwrap().clone()
