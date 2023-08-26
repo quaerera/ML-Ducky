@@ -198,4 +198,5 @@ impl Operations for DataFrame {
                 Cell::Text(x) => x,
                 _ => String::from(""),
             };
-            if !map.contains_key(&a.clone()) { map.insert(
+            if !map.contains_key(&a.clone()) { map.insert( a.clone(), vec![]); }
+            let mut
