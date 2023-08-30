@@ -206,4 +206,4 @@ impl Operations for DataFrame {
         Some(map)
     }
 
-    fn sort(
+    fn sort(&mut self, label: &str) -> Option<DataFr
