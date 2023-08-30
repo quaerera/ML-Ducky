@@ -201,4 +201,6 @@ impl Operations for DataFrame {
             if !map.contains_key(&a.clone()) { map.insert( a.clone(), vec![]); }
             let mut v = map.get(&a.clone()).unwrap().clone();
             v.push(row);
-            map
+            map.insert(a.clone(), v);
+        });
+   
