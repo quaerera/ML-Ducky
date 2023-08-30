@@ -203,4 +203,7 @@ impl Operations for DataFrame {
             v.push(row);
             map.insert(a.clone(), v);
         });
-   
+        Some(map)
+    }
+
+    fn sort(
