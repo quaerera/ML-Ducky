@@ -207,4 +207,5 @@ impl Operations for DataFrame {
     }
 
     fn sort(&mut self, label: &str) -> Option<DataFrame> {
-        let mut rows = match self.t
+        let mut rows = match self.to_rows() {
+            Som
