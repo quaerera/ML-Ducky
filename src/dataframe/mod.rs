@@ -209,4 +209,6 @@ impl Operations for DataFrame {
     fn sort(&mut self, label: &str) -> Option<DataFrame> {
         let mut rows = match self.to_rows() {
             Some(t) => t,
-            None => return None
+            None => return None,
+        };
+        let index = self.label
