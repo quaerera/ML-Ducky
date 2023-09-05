@@ -212,4 +212,5 @@ impl Operations for DataFrame {
             None => return None,
         };
         let index = self.labels.clone().into_iter().position(|x| &x == label).unwrap();
-        rows.
+        rows.sort_by(|a, b| {
+            match a.
