@@ -214,4 +214,5 @@ impl Operations for DataFrame {
         let index = self.labels.clone().into_iter().position(|x| &x == label).unwrap();
         rows.sort_by(|a, b| {
             match a.get(index).clone().unwrap() {
-                Ce
+                Cell::Text(a1) => {
+                    ma
