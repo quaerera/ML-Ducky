@@ -216,4 +216,5 @@ impl Operations for DataFrame {
             match a.get(index).clone().unwrap() {
                 Cell::Text(a1) => {
                     match b.get(index).clone().unwrap() {
-      
+                        Cell::Text(b1) => {
+    
