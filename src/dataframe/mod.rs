@@ -215,4 +215,5 @@ impl Operations for DataFrame {
         rows.sort_by(|a, b| {
             match a.get(index).clone().unwrap() {
                 Cell::Text(a1) => {
-                    ma
+                    match b.get(index).clone().unwrap() {
+      
