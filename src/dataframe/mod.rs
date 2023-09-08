@@ -218,4 +218,5 @@ impl Operations for DataFrame {
                     match b.get(index).clone().unwrap() {
                         Cell::Text(b1) => {
                             a1.cmp(&b1)
-             
+                        },
+                        _ => "".
