@@ -219,4 +219,6 @@ impl Operations for DataFrame {
                         Cell::Text(b1) => {
                             a1.cmp(&b1)
                         },
-                        _ => "".
+                        _ => "".cmp(""),
+                    }
+            
