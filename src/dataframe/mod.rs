@@ -225,4 +225,4 @@ impl Operations for DataFrame {
                 _ => "".cmp(""),
             }
         });
-        DataFrame:
+        DataFrame::from_rows(rows, self
