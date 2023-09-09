@@ -225,4 +225,7 @@ impl Operations for DataFrame {
                 _ => "".cmp(""),
             }
         });
-        DataFrame::from_rows(rows, self
+        DataFrame::from_rows(rows, self.labels.clone())
+    }
+
+    //
