@@ -228,4 +228,6 @@ impl Operations for DataFrame {
         DataFrame::from_rows(rows, self.labels.clone())
     }
 
-    //
+    /// Static methods
+    ///
+    fn read_cs
