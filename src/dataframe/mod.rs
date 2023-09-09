@@ -222,4 +222,7 @@ impl Operations for DataFrame {
                         _ => "".cmp(""),
                     }
                 },
-                
+                _ => "".cmp(""),
+            }
+        });
+        DataFrame:
