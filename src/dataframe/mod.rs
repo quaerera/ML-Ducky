@@ -230,4 +230,4 @@ impl Operations for DataFrame {
 
     /// Static methods
     ///
-    fn read_cs
+    fn read_csv(file_name: String) -> Re
