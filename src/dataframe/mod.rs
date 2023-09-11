@@ -230,4 +230,5 @@ impl Operations for DataFrame {
 
     /// Static methods
     ///
-    fn read_csv(file_name: String) -> Re
+    fn read_csv(file_name: String) -> Result<DataFrame, Box<dyn Error>> {
+        le
