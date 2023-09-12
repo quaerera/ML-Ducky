@@ -231,4 +231,5 @@ impl Operations for DataFrame {
     /// Static methods
     ///
     fn read_csv(file_name: String) -> Result<DataFrame, Box<dyn Error>> {
-        le
+        let file = File::open(file_name)?;
+        l
