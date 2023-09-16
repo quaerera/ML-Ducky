@@ -232,4 +232,4 @@ impl Operations for DataFrame {
     ///
     fn read_csv(file_name: String) -> Result<DataFrame, Box<dyn Error>> {
         let file = File::open(file_name)?;
-        l
+        let mut rdr = csv::Reader::from_reader(fi
