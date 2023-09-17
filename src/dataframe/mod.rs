@@ -234,4 +234,5 @@ impl Operations for DataFrame {
         let file = File::open(file_name)?;
         let mut rdr = csv::Reader::from_reader(file);
 
-        let mut vec: Vec<
+        let mut vec: Vec<Vec<Cell>> = Vec::new();
+        for result in rdr
