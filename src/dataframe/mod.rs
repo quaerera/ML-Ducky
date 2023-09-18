@@ -235,4 +235,5 @@ impl Operations for DataFrame {
         let mut rdr = csv::Reader::from_reader(file);
 
         let mut vec: Vec<Vec<Cell>> = Vec::new();
-        for result in rdr
+        for result in rdr.records() {
+            let mut row: Vec<Ce
