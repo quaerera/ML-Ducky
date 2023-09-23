@@ -236,4 +236,5 @@ impl Operations for DataFrame {
 
         let mut vec: Vec<Vec<Cell>> = Vec::new();
         for result in rdr.records() {
-            let mut row: Vec<Ce
+            let mut row: Vec<Cell> = Vec::new();
+            let record = re
