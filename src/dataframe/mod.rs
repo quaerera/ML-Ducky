@@ -238,4 +238,5 @@ impl Operations for DataFrame {
         for result in rdr.records() {
             let mut row: Vec<Cell> = Vec::new();
             let record = result?;
-            for el in record.iter(
+            for el in record.iter() {
+                row.push(Cell::fro
