@@ -239,4 +239,5 @@ impl Operations for DataFrame {
             let mut row: Vec<Cell> = Vec::new();
             let record = result?;
             for el in record.iter() {
-                row.push(Cell::fro
+                row.push(Cell::from(el.clone()));
+            }
