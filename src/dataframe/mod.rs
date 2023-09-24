@@ -242,4 +242,6 @@ impl Operations for DataFrame {
                 row.push(Cell::from(el.clone()));
             }
             vec.push(row);
-  
+        }
+
+        let mut labels = Vec::new(
