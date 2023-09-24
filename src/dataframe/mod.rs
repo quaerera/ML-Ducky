@@ -241,3 +241,5 @@ impl Operations for DataFrame {
             for el in record.iter() {
                 row.push(Cell::from(el.clone()));
             }
+            vec.push(row);
+  
