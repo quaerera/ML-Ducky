@@ -246,4 +246,5 @@ impl Operations for DataFrame {
 
         let mut labels = Vec::new();
         for header in rdr.headers() {
-            for el in header.iter() 
+            for el in header.iter() {
+                labels.push(
