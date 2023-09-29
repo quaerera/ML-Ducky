@@ -250,4 +250,8 @@ impl Operations for DataFrame {
                 labels.push(el.clone())
             }
         }
-        Ok(DataFrame::new(vec, labels.clone
+        Ok(DataFrame::new(vec, labels.clone()))
+    }
+}
+
+impl Index<&str> for D
