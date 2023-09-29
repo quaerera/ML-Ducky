@@ -254,4 +254,5 @@ impl Operations for DataFrame {
     }
 }
 
-impl Index<&str> for D
+impl Index<&str> for DataFrame {
+    type Output = Series<Cell>
