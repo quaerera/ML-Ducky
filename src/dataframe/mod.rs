@@ -249,4 +249,5 @@ impl Operations for DataFrame {
             for el in header.iter() {
                 labels.push(el.clone())
             }
-       
+        }
+        Ok(DataFrame::new(vec, labels.clone
