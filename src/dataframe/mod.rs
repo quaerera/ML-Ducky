@@ -257,4 +257,5 @@ impl Operations for DataFrame {
 impl Index<&str> for DataFrame {
     type Output = Series<Cell>;
 
-    fn index(&self, label: &st
+    fn index(&self, label: &str) -> &Self::Output {
+        for col in 
