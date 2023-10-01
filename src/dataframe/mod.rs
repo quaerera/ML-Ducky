@@ -255,4 +255,6 @@ impl Operations for DataFrame {
 }
 
 impl Index<&str> for DataFrame {
-    type Output = Series<Cell>
+    type Output = Series<Cell>;
+
+    fn index(&self, label: &st
