@@ -262,3 +262,5 @@ impl Index<&str> for DataFrame {
             if col.label == label.to_string() {
                 return &col;
             }
+        }
+        panic!("unknown c
