@@ -258,4 +258,5 @@ impl Index<&str> for DataFrame {
     type Output = Series<Cell>;
 
     fn index(&self, label: &str) -> &Self::Output {
-        for col in 
+        for col in &self.data {
+            if c
