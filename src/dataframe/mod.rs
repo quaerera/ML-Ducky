@@ -259,4 +259,4 @@ impl Index<&str> for DataFrame {
 
     fn index(&self, label: &str) -> &Self::Output {
         for col in &self.data {
-            if c
+            if col.label == label.to_string() {
