@@ -267,4 +267,5 @@ impl Index<&str> for DataFrame {
     }
 }
 
-impl Index<usi
+impl Index<usize> for DataFrame {
+    type Output = S
