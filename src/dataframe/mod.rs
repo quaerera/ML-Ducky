@@ -263,4 +263,8 @@ impl Index<&str> for DataFrame {
                 return &col;
             }
         }
-        panic!("unknown c
+        panic!("unknown column name")
+    }
+}
+
+impl Index<usi
