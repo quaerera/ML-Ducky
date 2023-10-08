@@ -269,4 +269,5 @@ impl Index<&str> for DataFrame {
 
 impl Index<usize> for DataFrame {
     type Output = Series<Cell>;
-    fn index(&self, i: us
+    fn index(&self, i: usize) -> &Self::Output {
+        &self.
