@@ -276,4 +276,8 @@ impl Index<usize> for DataFrame {
 
 impl IndexMut<usize> for DataFrame {
     fn index_mut(&mut self, i: usize) -> &mut Self::Output {
-        se
+        self.series(i)
+    }
+}
+
+impl Science for DataFrame {
