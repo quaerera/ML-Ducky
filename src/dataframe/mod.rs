@@ -274,4 +274,5 @@ impl Index<usize> for DataFrame {
     }
 }
 
-impl IndexMut<usize> 
+impl IndexMut<usize> for DataFrame {
+    fn index_mut(&mut self, 
