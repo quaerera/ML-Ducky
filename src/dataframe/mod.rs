@@ -281,3 +281,4 @@ impl IndexMut<usize> for DataFrame {
 }
 
 impl Science for DataFrame {
+    fn get_dummies(&mut self, lab
