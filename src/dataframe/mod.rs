@@ -282,4 +282,5 @@ impl IndexMut<usize> for DataFrame {
 
 impl Science for DataFrame {
     fn get_dummies(&mut self, label: &str) -> DataFrame {
-        let column = self.b
+        let column = self.by(label.clone()).unwrap();
+        let unique_c
