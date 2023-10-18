@@ -284,4 +284,5 @@ impl Science for DataFrame {
     fn get_dummies(&mut self, label: &str) -> DataFrame {
         let column = self.by(label.clone()).unwrap();
         let unique_column = column.clone().unique();
-      
+        let size = unique_column.clone().data.len();
+ 
