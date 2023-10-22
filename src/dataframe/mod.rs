@@ -286,4 +286,6 @@ impl Science for DataFrame {
         let unique_column = column.clone().unique();
         let size = unique_column.clone().data.len();
         let columns: Vec<Vec<Cell>> = column.data.iter().map(|el| {
-           
+            let mut tmp = vec![Cell::Integer(0); size];
+
+      
