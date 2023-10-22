@@ -285,4 +285,4 @@ impl Science for DataFrame {
         let column = self.by(label.clone()).unwrap();
         let unique_column = column.clone().unique();
         let size = unique_column.clone().data.len();
- 
+        let columns: Vec<Vec<Cell
