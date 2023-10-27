@@ -288,4 +288,4 @@ impl Science for DataFrame {
         let columns: Vec<Vec<Cell>> = column.data.iter().map(|el| {
             let mut tmp = vec![Cell::Integer(0); size];
 
-      
+            let index = unique_column.data.iter().
