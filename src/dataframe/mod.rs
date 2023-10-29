@@ -290,4 +290,5 @@ impl Science for DataFrame {
 
             let index = unique_column.data.iter().position(
                 |it| *it == *el
-     
+            ).unwrap();
+            tm
