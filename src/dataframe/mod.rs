@@ -292,4 +292,6 @@ impl Science for DataFrame {
                 |it| *it == *el
             ).unwrap();
             tmp[index] = Cell::Integer(1);
-  
+            tmp
+        }).collect();
+       
