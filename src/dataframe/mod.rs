@@ -294,4 +294,5 @@ impl Science for DataFrame {
             tmp[index] = Cell::Integer(1);
             tmp
         }).collect();
-       
+        let mut new_labels = Vec::new();
+        for i 
