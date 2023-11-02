@@ -296,4 +296,5 @@ impl Science for DataFrame {
         }).collect();
         let mut new_labels = Vec::new();
         for i in 0..size {
-            let mut temp = 
+            let mut temp = format!("{}_{}", label, i);
+            new_labe
