@@ -304,4 +304,4 @@ impl Science for DataFrame {
         df
     }
 
-    fn from_rows(r
+    fn from_rows(rows: Vec<Vec<Cell>>, labels: Vec<String>
