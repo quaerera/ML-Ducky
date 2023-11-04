@@ -300,4 +300,8 @@ impl Science for DataFrame {
             new_labels.push(temp.clone());
         }
         let v2: Vec<&str> = new_labels.iter().map(|s| &**s).collect();
-        let mut df = DataFrame::new(colu
+        let mut df = DataFrame::new(columns, v2);
+        df
+    }
+
+    fn from_rows(r
