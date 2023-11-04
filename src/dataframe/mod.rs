@@ -299,4 +299,4 @@ impl Science for DataFrame {
             let mut temp = format!("{}_{}", label, i);
             new_labels.push(temp.clone());
         }
-        let
+        let v2: Vec<&str> = new_labels.iter().map(|s| &**s).col
