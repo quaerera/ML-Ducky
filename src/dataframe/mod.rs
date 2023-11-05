@@ -305,4 +305,4 @@ impl Science for DataFrame {
     }
 
     fn from_rows(rows: Vec<Vec<Cell>>, labels: Vec<String>) -> Option<DataFrame> {
-        Some(Da
+        Some(DataFrame::new(rows, labels.iter().map( 
