@@ -305,4 +305,6 @@ impl Science for DataFrame {
     }
 
     fn from_rows(rows: Vec<Vec<Cell>>, labels: Vec<String>) -> Option<DataFrame> {
-        Some(DataFrame::new(rows, labels.iter().map( 
+        Some(DataFrame::new(rows, labels.iter().map( |it| {
+            it.as_str()
+        }
