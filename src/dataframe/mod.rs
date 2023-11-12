@@ -310,4 +310,4 @@ impl Science for DataFrame {
         }).collect()))
     }
 
-    fn from_vec<T
+    fn from_vec<T: NumCast + Copy>(vec: Vec<Vec<T>>, l
