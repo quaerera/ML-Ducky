@@ -310,4 +310,5 @@ impl Science for DataFrame {
         }).collect()))
     }
 
-    fn from_vec<T: NumCast + Copy>(vec: Vec<Vec<T>>, l
+    fn from_vec<T: NumCast + Copy>(vec: Vec<Vec<T>>, labels: Vec<&str>) -> DataFrame {
+        let mut new_vec: V
