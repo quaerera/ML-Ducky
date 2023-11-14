@@ -311,4 +311,5 @@ impl Science for DataFrame {
     }
 
     fn from_vec<T: NumCast + Copy>(vec: Vec<Vec<T>>, labels: Vec<&str>) -> DataFrame {
-        let mut new_vec: V
+        let mut new_vec: Vec<Vec<Cell>> = Vec::new();
+        f
