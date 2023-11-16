@@ -314,4 +314,5 @@ impl Science for DataFrame {
         let mut new_vec: Vec<Vec<Cell>> = Vec::new();
         for columns in vec.iter() {
             let mut elements: Vec<Cell> = Vec::new();
-            for value in columns
+            for value in columns.iter() {
+                elements.p
