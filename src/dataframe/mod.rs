@@ -319,4 +319,8 @@ impl Science for DataFrame {
             }
             new_vec.push(elements);
         }
-        DataFrame::new(new_vec.clone(), 
+        DataFrame::new(new_vec.clone(), labels)
+    }
+
+
+    fn to_matrix(&self) -> Op
