@@ -317,4 +317,5 @@ impl Science for DataFrame {
             for value in columns.iter() {
                 elements.push(Cell::from(num::cast::<_, i32>(*value).unwrap()));
             }
-            new
+            new_vec.push(elements);
+        }
