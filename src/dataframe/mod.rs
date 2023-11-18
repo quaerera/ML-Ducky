@@ -315,4 +315,6 @@ impl Science for DataFrame {
         for columns in vec.iter() {
             let mut elements: Vec<Cell> = Vec::new();
             for value in columns.iter() {
-                elements.push(Cell::from(num::cast::<_, i32>(*valu
+                elements.push(Cell::from(num::cast::<_, i32>(*value).unwrap()));
+            }
+            new
