@@ -323,4 +323,6 @@ impl Science for DataFrame {
     }
 
 
-    fn to_matrix(&self) -> Op
+    fn to_matrix(&self) -> Option<Matrix> {
+        let mut el = vec![];
+      
