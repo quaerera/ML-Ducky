@@ -327,4 +327,5 @@ impl Science for DataFrame {
         let mut el = vec![];
         for i in 0..self.size {
             let mut row = vec![];
-            for j i
+            for j in 0..self.data.len() {
+                match self.
