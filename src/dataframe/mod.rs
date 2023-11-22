@@ -326,4 +326,5 @@ impl Science for DataFrame {
     fn to_matrix(&self) -> Option<Matrix> {
         let mut el = vec![];
         for i in 0..self.size {
-            let
+            let mut row = vec![];
+            for j i
