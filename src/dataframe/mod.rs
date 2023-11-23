@@ -328,4 +328,5 @@ impl Science for DataFrame {
         for i in 0..self.size {
             let mut row = vec![];
             for j in 0..self.data.len() {
-                match self.
+                match self.data[j].data[i].clone() {
+                   
