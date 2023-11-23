@@ -329,4 +329,5 @@ impl Science for DataFrame {
             let mut row = vec![];
             for j in 0..self.data.len() {
                 match self.data[j].data[i].clone() {
-                   
+                    Cell::Text(value) => {
+                     
