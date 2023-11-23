@@ -330,4 +330,6 @@ impl Science for DataFrame {
             for j in 0..self.data.len() {
                 match self.data[j].data[i].clone() {
                     Cell::Text(value) => {
-                     
+                        return None;
+                    }
+          
