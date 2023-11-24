@@ -333,4 +333,5 @@ impl Science for DataFrame {
                         return None;
                     }
                     Cell::Float64(value) => {
-   
+                        row.push(value);
+     
