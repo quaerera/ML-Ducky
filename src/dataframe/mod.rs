@@ -332,4 +332,5 @@ impl Science for DataFrame {
                     Cell::Text(value) => {
                         return None;
                     }
-          
+                    Cell::Float64(value) => {
+   
