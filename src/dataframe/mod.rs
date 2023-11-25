@@ -336,4 +336,5 @@ impl Science for DataFrame {
                         row.push(value);
                     }
                     Cell::Float(value) => {
-                     
+                        row.push(value as f64);
+                    
