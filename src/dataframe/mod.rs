@@ -339,4 +339,6 @@ impl Science for DataFrame {
                         row.push(value as f64);
                     }
                     Cell::Integer(value) => {
-                        row.push(value a
+                        row.push(value as f64);
+                    }
+              
