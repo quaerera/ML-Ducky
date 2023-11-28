@@ -341,4 +341,5 @@ impl Science for DataFrame {
                     Cell::Integer(value) => {
                         row.push(value as f64);
                     }
+                    Cell::Bool(value) => {
               
