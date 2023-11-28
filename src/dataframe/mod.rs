@@ -342,4 +342,6 @@ impl Science for DataFrame {
                         row.push(value as f64);
                     }
                     Cell::Bool(value) => {
-                        row.push(if value { 1.0 } else { 
+                        row.push(if value { 1.0 } else { 0.0 });
+                    }
+                }
