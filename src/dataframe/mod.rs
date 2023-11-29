@@ -347,4 +347,7 @@ impl Science for DataFrame {
                 }
             }
             el.push(row);
-     
+        }
+        Some(el)
+    }
+}
