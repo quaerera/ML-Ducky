@@ -345,3 +345,6 @@ impl Science for DataFrame {
                         row.push(if value { 1.0 } else { 0.0 });
                     }
                 }
+            }
+            el.push(row);
+     
