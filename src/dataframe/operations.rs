@@ -5,4 +5,5 @@ use crate::cell::Cell;
 use crate::dataframe::{DataFrame, DataFrameGroupBy};
 use crate::series::Series;
 
-pub trait Operati
+pub trait Operations {
+    fn new(vec: Vec<Vec<Cell>>, 
