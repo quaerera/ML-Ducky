@@ -3,4 +3,6 @@ use std::error::Error;
 
 use crate::cell::Cell;
 use crate::dataframe::{DataFrame, DataFrameGroupBy};
-us
+use crate::series::Series;
+
+pub trait Operati
