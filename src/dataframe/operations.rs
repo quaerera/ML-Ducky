@@ -8,4 +8,6 @@ use crate::series::Series;
 pub trait Operations {
     fn new(vec: Vec<Vec<Cell>>, labels: Vec<&str>) -> DataFrame;
 
-    fn push(&mut s
+    fn push(&mut self, element: Vec<Cell>);
+
+    fn se
