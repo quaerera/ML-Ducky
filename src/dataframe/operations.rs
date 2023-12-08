@@ -10,4 +10,6 @@ pub trait Operations {
 
     fn push(&mut self, element: Vec<Cell>);
 
-    fn series(&mut self, index: usize) -> &mut Seri
+    fn series(&mut self, index: usize) -> &mut Series<Cell>;
+
+    /// From column series to r
