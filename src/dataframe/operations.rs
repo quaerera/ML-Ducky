@@ -10,4 +10,4 @@ pub trait Operations {
 
     fn push(&mut self, element: Vec<Cell>);
 
-    fn se
+    fn series(&mut self, index: usize) -> &mut Seri
