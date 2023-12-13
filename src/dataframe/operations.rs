@@ -13,4 +13,6 @@ pub trait Operations {
     fn series(&mut self, index: usize) -> &mut Series<Cell>;
 
     /// From column series to rows
-    fn to_rows(&self) -> Option<Vec<Vec<Cell>
+    fn to_rows(&self) -> Option<Vec<Vec<Cell>>>;
+
+    /// Get selected colum
