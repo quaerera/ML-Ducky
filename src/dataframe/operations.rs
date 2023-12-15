@@ -18,4 +18,5 @@ pub trait Operations {
     /// Get selected column by using label name
     fn by(&mut self, label: &str) -> Option<&mut Series<Cell>>;
 
-    /// 
+    /// Get selected column by using label name
+  
