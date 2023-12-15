@@ -16,4 +16,6 @@ pub trait Operations {
     fn to_rows(&self) -> Option<Vec<Vec<Cell>>>;
 
     /// Get selected column by using label name
-    fn by(&mut self, label: &str)
+    fn by(&mut self, label: &str) -> Option<&mut Series<Cell>>;
+
+    /// 
