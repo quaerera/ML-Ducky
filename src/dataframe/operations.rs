@@ -21,4 +21,6 @@ pub trait Operations {
     /// Get selected column by using label name
     fn many(&mut self, labels: Vec<&str>) -> Vec<Series<Cell>>;
 
-    fn map(&mut self, col: &str, obj: HashMap<&str, u32>) -> DataFra
+    fn map(&mut self, col: &str, obj: HashMap<&str, u32>) -> DataFrame;
+
+    /// Concatenate two data fram
