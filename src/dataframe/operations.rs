@@ -19,4 +19,4 @@ pub trait Operations {
     fn by(&mut self, label: &str) -> Option<&mut Series<Cell>>;
 
     /// Get selected column by using label name
-  
+    fn many(&mut self, labels: Vec<&str>) -> 
