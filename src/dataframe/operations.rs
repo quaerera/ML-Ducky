@@ -23,4 +23,5 @@ pub trait Operations {
 
     fn map(&mut self, col: &str, obj: HashMap<&str, u32>) -> DataFrame;
 
-    /// Concatenate two data fram
+    /// Concatenate two data frames
+    fn concat(&mut self, df: DataFrame) -> Da
