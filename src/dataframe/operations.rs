@@ -29,4 +29,4 @@ pub trait Operations {
     /// Drop column by label from Data Frame
     fn drop(&mut self, label: Vec<&str>) -> Option<DataFrame>;
 
-    ///
+    /// Drop column by position from D
