@@ -27,4 +27,6 @@ pub trait Operations {
     fn concat(&mut self, df: DataFrame) -> DataFrame;
 
     /// Drop column by label from Data Frame
-    fn drop(&mut self, label: Vec<&
+    fn drop(&mut self, label: Vec<&str>) -> Option<DataFrame>;
+
+    ///
