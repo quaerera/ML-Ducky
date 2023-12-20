@@ -26,4 +26,5 @@ pub trait Operations {
     /// Concatenate two data frames
     fn concat(&mut self, df: DataFrame) -> DataFrame;
 
-    /// Drop column by label fro
+    /// Drop column by label from Data Frame
+    fn drop(&mut self, label: Vec<&
