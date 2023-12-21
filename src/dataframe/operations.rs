@@ -32,4 +32,6 @@ pub trait Operations {
     /// Drop column by position from Data Frame
     fn drop_idx(&mut self, position: usize) -> Option<DataFrame>;
 
-    fn con
+    fn contains(self, label: &str) -> bool;
+
+    fn 
