@@ -30,4 +30,6 @@ pub trait Operations {
     fn drop(&mut self, label: Vec<&str>) -> Option<DataFrame>;
 
     /// Drop column by position from Data Frame
-    fn drop_idx(&mut self, position: u
+    fn drop_idx(&mut self, position: usize) -> Option<DataFrame>;
+
+    fn con
