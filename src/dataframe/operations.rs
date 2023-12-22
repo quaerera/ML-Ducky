@@ -34,4 +34,6 @@ pub trait Operations {
 
     fn contains(self, label: &str) -> bool;
 
-    fn 
+    fn join(&mut self, df: DataFrame);
+
+    fn g
