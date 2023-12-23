@@ -38,4 +38,4 @@ pub trait Operations {
 
     fn group_by(&mut self, label: &str) -> Option<DataFrameGroupBy>;
 
-    fn 
+    fn sort(&mut self, label: &str) -> Option<Data
