@@ -36,4 +36,4 @@ pub trait Operations {
 
     fn join(&mut self, df: DataFrame);
 
-    fn g
+    fn group_by(&mut self, label: &str) ->
