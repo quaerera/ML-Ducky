@@ -41,4 +41,6 @@ pub trait Operations {
     fn sort(&mut self, label: &str) -> Option<DataFrame>;
 
     /// static methods
-  
+    /*
+        Read data from csv file
+ 
