@@ -44,4 +44,5 @@ pub trait Operations {
     /*
         Read data from csv file
     */
-    fn read_csv(file_name: String) -> Result<DataFrame, Box<dyn Error>
+    fn read_csv(file_name: String) -> Result<DataFrame, Box<dyn Error>>;
+}
