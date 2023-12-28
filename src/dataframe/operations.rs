@@ -43,4 +43,5 @@ pub trait Operations {
     /// static methods
     /*
         Read data from csv file
- 
+    */
+    fn read_csv(file_name: String) -> Res
