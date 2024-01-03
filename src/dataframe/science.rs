@@ -6,4 +6,5 @@ use crate::dataframe::DataFrame;
 use crate::algebraic::matrix::Matrix;
 use crate::cell::Cell;
 
-pub trait Scie
+pub trait Science {
+    /// One hot encoding 
