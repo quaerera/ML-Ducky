@@ -7,4 +7,5 @@ use crate::algebraic::matrix::Matrix;
 use crate::cell::Cell;
 
 pub trait Science {
-    /// One hot encoding - Convert string values to binary v
+    /// One hot encoding - Convert string values to binary value
+    fn get_dummies(&mut self, label:
