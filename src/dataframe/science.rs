@@ -7,4 +7,4 @@ use crate::algebraic::matrix::Matrix;
 use crate::cell::Cell;
 
 pub trait Science {
-    /// One hot encoding 
+    /// One hot encoding - Convert string values to binary v
