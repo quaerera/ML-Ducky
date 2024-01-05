@@ -8,4 +8,6 @@ use crate::cell::Cell;
 
 pub trait Science {
     /// One hot encoding - Convert string values to binary value
-    fn get_dummies(&mut self, label:
+    fn get_dummies(&mut self, label: &str) -> DataFrame;
+
+    fn from
