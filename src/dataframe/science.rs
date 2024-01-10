@@ -13,4 +13,5 @@ pub trait Science {
     fn from_vec<T>(vec: Vec<Vec<T>>, labels: Vec<&str>) -> DataFrame
         where T: PrimInt + Signed + Product;
 
-    /// From rows to data 
+    /// From rows to data frame
+    fn from_rows(rows: Vec<Vec<Cell>
