@@ -11,4 +11,6 @@ pub trait Science {
     fn get_dummies(&mut self, label: &str) -> DataFrame;
 
     fn from_vec<T>(vec: Vec<Vec<T>>, labels: Vec<&str>) -> DataFrame
-        where T: PrimInt + Signed +
+        where T: PrimInt + Signed + Product;
+
+    /// From rows to data 
