@@ -14,4 +14,4 @@ pub trait Science {
         where T: PrimInt + Signed + Product;
 
     /// From rows to data frame
-    fn from_rows(rows: Vec<Vec<Cell>
+    fn from_rows(rows: Vec<Vec<Cell>>, labels: Vec<String>) -> Option<DataFram
