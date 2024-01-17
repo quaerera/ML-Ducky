@@ -96,3 +96,46 @@ mod tests {
 
     #[test]
     fn test_concate() {
+        let mut df = DataFrame::read_csv(format!("src/data/Startups.csv")).unwrap();
+        let new_df = df.get_dummies("State");
+        let best_df = df.concat(new_df);
+        assert_eq!(best_df.size, 8);
+    }
+
+    #[test]
+    fn test_drop() {
+        let mut df = DataFrame::read_csv(format!("src/data/Startups.csv")).unwrap();
+        let new_df = df.drop(vec!["State"]).unwrap();
+        assert_eq!(new_df.contains("State"), false);
+    }
+
+    #[test]
+    fn test_join() {
+        let mut df = DataFrame::new(
+            vec![
+                row![0.4, 0.7, "book", true, 1],
+                row![3.0, 4.7, "poster", true, 1],
+            ],
+            vec!["A", "B", "C", "D", "E"]
+        );
+        let mut df2 = DataFrame::new(
+            vec![
+                row![1.4, 1.7],
+                row![13.0, 13.7],
+            ],
+            vec!["F", "G"]
+        );
+        df.join(df2);
+        assert_eq!(df.contains("G"), true);
+    }
+
+    #[test]
+    fn test_to_rows() {
+        let mut df = DataFrame::new(
+            vec![
+                row![0.4, 0.7, "book", true, 1],
+                row![3.0, 4.7, "poster", true, 1],
+            ],
+            vec!["A", "B", "C", "D", "E"]
+        );
+        let result = df.to_rows().unwrap();
