@@ -139,3 +139,45 @@ mod tests {
             vec!["A", "B", "C", "D", "E"]
         );
         let result = df.to_rows().unwrap();
+        assert_eq!(result[0].len(), 5);
+        assert_eq!(result.len(), 2);
+    }
+
+    #[test]
+    fn test_group_by() {
+        let mut df = DataFrame::new(
+            vec![
+                row![0.4, 0.7, "book", true, 1],
+                row![3.0, 4.7, "poster", true, 1],
+                row![3.0, 4.7, "book", true, 1],
+            ],
+            vec!["A", "B", "C", "D", "E"]
+        );
+        let result = df.group_by("C").unwrap();
+        assert_eq!(result.contains_key("book"), true);
+    }
+
+    #[test]
+    fn test_sort() {
+        let mut df = DataFrame::new(
+            vec![
+                row![0.4, 0.7, "poster", true, 1],
+                row![3.0, 4.7, "table", true, 1],
+                row![3.0, 4.7, "book", true, 1],
+            ],
+            vec!["A", "B", "C", "D", "E"]
+        );
+        let result = df.sort("C").unwrap();
+        assert_eq!(result.data[2].data[0], Cell::Text("book".to_string()));
+    }
+
+    #[test]
+    fn test_to_matrix() {
+        let mut df = DataFrame::new(
+            vec![
+                row![0.4, 0.7, true, 1],
+                row![3.0, 4.7, true, 1],
+                row![3.0, 4.7, true, 1],
+            ],
+            vec!["A", "B", "D", "E"]
+        );
