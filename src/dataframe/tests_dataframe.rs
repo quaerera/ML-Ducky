@@ -181,3 +181,7 @@ mod tests {
             ],
             vec!["A", "B", "D", "E"]
         );
+        let result = df.to_matrix().unwrap();
+        assert_eq!(result[0][2], 1.0);
+    }
+}
