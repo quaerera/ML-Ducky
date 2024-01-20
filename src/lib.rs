@@ -3,4 +3,6 @@ pub mod cell;
 #[macro_use]
 pub mod macros;
 pub mod dataframe;
-pub mo
+pub mod series;
+pub mod utils;
+pub m
