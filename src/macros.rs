@@ -1,3 +1,5 @@
 #[macro_export]
 macro_rules! row {
-    ( $( $x:expr ),* ) =>
+    ( $( $x:expr ),* ) => {
+        {
+            use crate::cell::C
