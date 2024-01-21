@@ -5,4 +5,5 @@ pub mod macros;
 pub mod dataframe;
 pub mod series;
 pub mod utils;
-pub m
+pub mod math;
+pub mod algebraic;
