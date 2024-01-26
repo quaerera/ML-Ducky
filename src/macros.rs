@@ -4,4 +4,5 @@ macro_rules! row {
         {
             use crate::cell::Cell;
             let mut temp_vec = Vec::<Cell>::new();
-         
+            $(
+                temp_vec.push(Cell::from($
