@@ -7,4 +7,7 @@ macro_rules! row {
             $(
                 temp_vec.push(Cell::from($x));
             )*
-            temp_v
+            temp_vec
+        }
+    };
+}
