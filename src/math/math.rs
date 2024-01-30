@@ -5,4 +5,6 @@ use crate::cell::Cell;
 use crate::series::Series;
 
 use std::f64;
-use
+use num_traits::FromPrimitive;
+
+fn sigmoi
