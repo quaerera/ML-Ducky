@@ -7,4 +7,8 @@ use crate::series::Series;
 use std::f64;
 use num_traits::FromPrimitive;
 
-fn sigmoi
+fn sigmoid(x: f64) -> f64 {
+    x.signum()
+}
+
+fn minmax_ite
