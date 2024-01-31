@@ -11,4 +11,4 @@ fn sigmoid(x: f64) -> f64 {
     x.signum()
 }
 
-fn minmax_ite
+fn minmax_item<T: Into<f64> + Copy>(min_max: (f64, f64), item: 
