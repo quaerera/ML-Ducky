@@ -19,4 +19,7 @@ fn minmax_item<T: Into<f64> + Copy>(min_max: (f64, f64), item: T) -> (f64, f64) 
 }
 
 fn minmax<T: Into<f64> + Copy>(series: Vec<T>) -> Option<(f64, f64)> {
-    if series.i
+    if series.is_empty() {
+        ()
+    }
+    let mut
