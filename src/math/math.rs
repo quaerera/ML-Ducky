@@ -22,4 +22,4 @@ fn minmax<T: Into<f64> + Copy>(series: Vec<T>) -> Option<(f64, f64)> {
     if series.is_empty() {
         ()
     }
-    let mut
+    let mut min_max = (series[0].into(), series[0].into
