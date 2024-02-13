@@ -25,4 +25,6 @@ fn minmax<T: Into<f64> + Copy>(series: Vec<T>) -> Option<(f64, f64)> {
     let mut min_max = (series[0].into(), series[0].into());
     series
         .iter()
-        .skip(1
+        .skip(1)
+        .for_each(
+            | &ele
