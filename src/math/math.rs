@@ -28,4 +28,6 @@ fn minmax<T: Into<f64> + Copy>(series: Vec<T>) -> Option<(f64, f64)> {
         .skip(1)
         .for_each(
             | &element| {
-                min_max = minmax_item(
+                min_max = minmax_item(min_max, element);
+            });
+    Some(min
