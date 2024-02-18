@@ -37,3 +37,5 @@ fn series_minmax(series: Series<Cell>) -> (f64, f64) {
     let mut min_max: (f64, f64) = (f64::nan(), f64::nan());
     for element in series.data {
         match element {
+            Cell::Integer(cell) => {
+              
