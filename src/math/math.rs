@@ -30,4 +30,7 @@ fn minmax<T: Into<f64> + Copy>(series: Vec<T>) -> Option<(f64, f64)> {
             | &element| {
                 min_max = minmax_item(min_max, element);
             });
-    Some(min
+    Some(min_max)
+}
+
+fn series_minmax(series: Seri
