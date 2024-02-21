@@ -43,4 +43,5 @@ fn series_minmax(series: Series<Cell>) -> (f64, f64) {
             Cell::Float(cell) => {
                 min_max = minmax_item(min_max, cell);
             },
-            Cell::Float
+            Cell::Float64(cell) => {
+                min_max = mi
