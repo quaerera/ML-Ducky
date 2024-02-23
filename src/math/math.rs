@@ -52,4 +52,6 @@ fn series_minmax(series: Series<Cell>) -> (f64, f64) {
     min_max
 }
 
-#[cfg(test
+#[cfg(test)]
+mod tests {
+    use crat
