@@ -56,4 +56,6 @@ fn series_minmax(series: Series<Cell>) -> (f64, f64) {
 mod tests {
     use crate::math::math;
     use crate::dataframe::DataFrame;
-    use crate::dataframe::operations
+    use crate::dataframe::operations::Operations;
+    #[test]
+    fn test_minmax_f
