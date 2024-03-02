@@ -58,4 +58,5 @@ mod tests {
     use crate::dataframe::DataFrame;
     use crate::dataframe::operations::Operations;
     #[test]
-    fn test_minmax_f
+    fn test_minmax_float() {
+        let series = vec![0.2, 5
