@@ -66,4 +66,5 @@ mod tests {
     }
 
     #[test]
-    fn 
+    fn test_minmax_integer() {
+        let seri
