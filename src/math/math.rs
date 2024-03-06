@@ -70,4 +70,8 @@ mod tests {
         let series = vec![2, 5, 7, 0];
         let (min, max) = math::minmax(series).unwrap();
         assert_eq!(min, 0.0);
-        assert_eq!(
+        assert_eq!(max, 7.0);
+    }
+
+    #[test]
+    fn test_minmax
