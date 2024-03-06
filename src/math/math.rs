@@ -60,4 +60,5 @@ mod tests {
     #[test]
     fn test_minmax_float() {
         let series = vec![0.2, 5.6, 7.0, 3.0];
-        let (min, max) = math:
+        let (min, max) = math::minmax(series).unwrap();
+        assert_eq!(min, 0.2)
