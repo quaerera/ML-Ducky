@@ -68,4 +68,5 @@ mod tests {
     #[test]
     fn test_minmax_integer() {
         let series = vec![2, 5, 7, 0];
-        let (
+        let (min, max) = math::minmax(series).unwrap();
+  
