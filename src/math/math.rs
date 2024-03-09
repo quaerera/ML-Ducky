@@ -74,4 +74,5 @@ mod tests {
     }
 
     #[test]
-    fn test_minmax
+    fn test_minmax_series() {
+        let series = vec![2, 5, 7,
