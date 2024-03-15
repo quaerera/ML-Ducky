@@ -79,3 +79,6 @@ mod tests {
         let (min, max) = math::minmax(series).unwrap();
         assert_eq!(min, 0.0);
         assert_eq!(max, 7.0);
+    }
+    #[test]
+    fn test_series_mi
