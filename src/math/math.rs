@@ -76,4 +76,5 @@ mod tests {
     #[test]
     fn test_minmax_series() {
         let series = vec![2, 5, 7, 0];
-        let (min, max) = math::minmax(s
+        let (min, max) = math::minmax(series).unwrap();
+        assert_eq!(m
