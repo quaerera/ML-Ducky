@@ -81,4 +81,5 @@ mod tests {
         assert_eq!(max, 7.0);
     }
     #[test]
-    fn test_series_mi
+    fn test_series_minmax() {
+        let mut df = Dat
