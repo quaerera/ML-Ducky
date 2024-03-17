@@ -82,4 +82,6 @@ mod tests {
     }
     #[test]
     fn test_series_minmax() {
-        let mut df = Dat
+        let mut df = DataFrame::new(
+            vec![
+  
