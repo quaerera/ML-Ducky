@@ -84,4 +84,5 @@ mod tests {
     fn test_series_minmax() {
         let mut df = DataFrame::new(
             vec![
-  
+                row![0.4, 0.7, "book", true, 1],
+    
