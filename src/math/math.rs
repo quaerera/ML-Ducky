@@ -87,4 +87,6 @@ mod tests {
                 row![0.4, 0.7, "book", true, 1],
                 row![3.0, 4.7, "poster", true, 1],
             ],
-           
+            vec!["A", "B", "C", "D", "E"]
+        );
+ 
