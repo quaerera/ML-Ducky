@@ -85,4 +85,6 @@ mod tests {
         let mut df = DataFrame::new(
             vec![
                 row![0.4, 0.7, "book", true, 1],
-                row![3.0, 4.7, "poster"
+                row![3.0, 4.7, "poster", true, 1],
+            ],
+           
