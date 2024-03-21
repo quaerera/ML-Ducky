@@ -89,4 +89,5 @@ mod tests {
             ],
             vec!["A", "B", "C", "D", "E"]
         );
-        let series = df.by("A").unwrap
+        let series = df.by("A").unwrap().to_owned();
+        let (min,
