@@ -89,4 +89,4 @@ mod tests {
             ],
             vec!["A", "B", "C", "D", "E"]
         );
- 
+        let series = df.by("A").unwrap
