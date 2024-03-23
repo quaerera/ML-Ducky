@@ -91,4 +91,5 @@ mod tests {
         );
         let series = df.by("A").unwrap().to_owned();
         let (min, max) = math::series_minmax(series);
-      
+        assert_eq!(min, 0.4);
+        assert_eq!(max
