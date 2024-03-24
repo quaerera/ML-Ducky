@@ -64,3 +64,9 @@ impl SeriesImpl for Series<Cell> {
                         return true;
                     }
                 }
+                _ => {}
+            }
+        }
+        return false;
+    }
+}
