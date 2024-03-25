@@ -1,2 +1,5 @@
 #[derive(Debug)]
-pub enum DataType
+pub enum DataTypes {
+    Integer,
+    Integer64,
+    Text,
