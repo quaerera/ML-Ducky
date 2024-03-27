@@ -8,4 +8,6 @@ pub enum DataTypes {
     Bool,
 }
 pub type DInteger = i32;
-pub type DInteger
+pub type DInteger64 = i64;
+pub type DFloat = f32;
+pub t
