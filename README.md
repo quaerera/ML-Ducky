@@ -1,1 +1,1 @@
-# Duck ML\n### Duck 
+# Duck ML\n### Duck is implementation in Rust Machine Learning Library
