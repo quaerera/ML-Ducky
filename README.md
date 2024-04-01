@@ -1,1 +1,1 @@
-# Duck ML\n### Duck is implementation in Rust Machine Learning Library.\nIn this moment we start creating DataFrame.\nWe want to use ndarray 
+# Duck ML\n### Duck is implementation in Rust Machine Learning Library.\nIn this moment we start creating DataFrame.\nWe want to use ndarray as some numpy alternative and nalgebra a
